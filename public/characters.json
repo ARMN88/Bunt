@@ -1,9 +1,145 @@
 {
+  "HamzaA": {
+    "bones": {
+      "Arm_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Arm_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Body": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Head": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      }
+    },
+    "animations": {}
+  },
+  "HamzaI": {
+    "bones": {
+      "Arm_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Arm_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Body": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Head": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      }
+    },
+    "animations": {}
+  },
+  "MalikS": {
+    "bones": {
+      "Arm_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Arm_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Body": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Head": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      }
+    },
+    "animations": {}
+  },
   "Wael": {
     "bones": {
-      "Arm Bottom": {
-        "start": [88, 34],
-        "end": [13, 55]
+      "Arm_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Arm_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Body": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Head": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      }
+    },
+    "animations": {}
+  },
+  "Zaid": {
+    "bones": {
+      "Arm_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Arm_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Body": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Head": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Bottom": {
+        "start": [0, 0],
+        "end": [100, 100]
+      },
+      "Leg_Top": {
+        "start": [0, 0],
+        "end": [100, 100]
       }
     },
     "animations": {}

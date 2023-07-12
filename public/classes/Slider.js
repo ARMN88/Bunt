@@ -3,6 +3,7 @@ export default class Slider {
     const scope = this;
 
     this.details = document.createElement('details');
+    this.details.open = true;
 
     let summary = document.createElement('summary');
     summary.appendChild(document.createTextNode(name));

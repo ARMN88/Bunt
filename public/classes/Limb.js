@@ -1,14 +1,15 @@
-import { ctx } from '../script.js';
+import { ctx } from '../boneEditor.js';
 
 export default class Limb {
-  constructor(image, start = { x: 0, y: 0 }, end = { x: 1, y: 1 }) {
+  constructor(character, limb, start = { x: 0, y: 0 }, end = { x: 1, y: 1 }) {
     this.image = new Image();
-    this.image.src = `../images/${image.replaceAll(' ', '_')}.png`;
+    this.image.src = `../images/${character}/${limb}.png`;
 
     this.start = start;
     this.end = end;
   }
   draw(size) {
+    if (this.image.naturalWidth === 0) return;
     ctx.drawImage(
       this.image,
       0,

@@ -24,12 +24,22 @@
         padding: 1vw;
         margin: 1vh;
       }
+      select {
+        width: 100%;
+        margin: 0.5vh 0;
+      }
     </style>
     <title>Bunt</title>
   </head>
   <body>
-    <main></main>
+    <main>
+      <details open>
+        <summary>Limb</summary>
+        <select id="character"></select>
+        <select id="limb"></select>
+      </details>
+    </main>
     <canvas></canvas>
   </body>
-  <script src="script.js" type="module"></script>
+  <script src="boneEditor.js" type="module"></script>
 </html>
