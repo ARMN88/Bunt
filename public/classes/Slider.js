@@ -12,9 +12,9 @@ export default class Slider {
 
     this.slider = document.createElement('input');
     this.slider.setAttribute('type', 'range');
-    this.slider.setAttribute('start', range[0] ?? 0);
+    this.slider.setAttribute('min', range[0] ?? 0);
+    this.slider.setAttribute('max', range[2] ?? 100);
     this.slider.setAttribute('value', range[1] ?? 50);
-    this.slider.setAttribute('end', range[2] ?? 100);
     this.slider.setAttribute('step', range[3] || 1);
     this.slider.oninput = function () {
       if (!this.value) return;
@@ -25,6 +25,7 @@ export default class Slider {
 
     this.input = document.createElement('input');
     this.input.setAttribute('type', 'number');
+    this.input.setAttribute('value', range[1] ?? 50);
     this.input.style.width = '100%';
     this.input.onchange = function () {
       if (!this.value) return;

@@ -1,7 +1,7 @@
 import { ctx } from '../boneEditor.js';
 
 export default class Limb {
-  constructor(character, limb, start = { x: 0, y: 0 }, end = { x: 1, y: 1 }) {
+  constructor(character, limb, start = [0, 0], end = [100, 100]) {
     this.image = new Image();
     this.image.src = `../images/${character}/${limb}.png`;
 
@@ -21,8 +21,8 @@ export default class Limb {
     ctx.fillStyle = 'limegreen';
     ctx.beginPath();
     ctx.arc(
-      size * this.start.x,
-      size * this.start.y * (this.image.height / this.image.width),
+      size * (this.start[0] / 100),
+      size * (this.start[1] / 100) * (this.image.height / this.image.width),
       5,
       0,
       2 * Math.PI
@@ -32,8 +32,8 @@ export default class Limb {
     ctx.fillStyle = 'dodgerblue';
     ctx.beginPath();
     ctx.arc(
-      size * this.end.x,
-      size * this.end.y * (this.image.height / this.image.width),
+      size * (this.end[0] / 100),
+      size * (this.end[1] / 100) * (this.image.height / this.image.width),
       5,
       0,
       2 * Math.PI

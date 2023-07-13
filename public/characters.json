@@ -2,12 +2,12 @@
   "HamzaA": {
     "bones": {
       "Arm_Bottom": {
-        "start": [0, 0],
-        "end": [100, 100]
+        "start": [58, 42],
+        "end": [53, 40]
       },
       "Arm_Top": {
-        "start": [0, 0],
-        "end": [100, 100]
+        "start": [10, 10],
+        "end": [90, 90]
       },
       "Body": {
         "start": [0, 0],
