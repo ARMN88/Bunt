@@ -18,7 +18,7 @@ let character = new Limb('HamzaA', 'Arm_Bottom');
 const characterSelector = document.querySelector('#character');
 const limbSelector = document.querySelector('#limb');
 
-const sizeSlider = new Slider('Size', [0, size, 5000]);
+const sizeSlider = new Slider('Size', [0, size, 2000]);
 
 const startXSlider = new Slider('Start X', [0, 0, 100]);
 const startYSlider = new Slider('Start Y', [0, 0, 100]);
@@ -46,12 +46,14 @@ sizeSlider.onChange = (value) => (size = value);
 
 characterSelector.onchange = function () {
   character = new Limb(this.value, limbSelector.value);
+
   character.start = characters[this.value].bones[limbSelector.value].start;
   character.end = characters[this.value].bones[limbSelector.value].end;
 };
 
 limbSelector.onchange = function () {
   character = new Limb(characterSelector.value, this.value);
+
   character.start = characters[characterSelector.value].bones[this.value].start;
   character.end = characters[characterSelector.value].bones[this.value].end;
 };
@@ -64,6 +66,15 @@ document.onkeydown = (e) => {
     end: character.end,
     start: character.start,
   });
+};
+
+document.onmousedown = (e) => {
+  document.querySelector('#position').innerHTML = `(${Math.round(
+    (e.clientX / size) * 100
+  )}, ${Math.round(
+    (e.clientY / (size * (character.image.height / character.image.width))) *
+      100
+  )})`;
 };
 
 // Socket Events //
