@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const characters = fs.readdirSync('./public/images/');
+const characters = fs.readdirSync('./public/images/characters/');
 const currentData = JSON.parse(
   fs.readFileSync('./public/characters.json', 'utf-8')
 );
@@ -9,7 +9,7 @@ const data = {};
 
 for (const character of characters) {
   if (currentData[character]) return;
-  const limbs = fs.readdirSync(`./public/images/${character}/`);
+  const limbs = fs.readdirSync(`./public/images/characters/${character}/`);
   data[character] = {
     bones: {},
     animations: {},

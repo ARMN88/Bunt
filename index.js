@@ -14,7 +14,7 @@ io.on('connection', (socket) => {
   console.log(`Socket ${socket.id} connected!`);
   socket.emit(
     'charactersData',
-    JSON.parse(fs.readFileSync('./public/characters.json', 'utf-8'))
+    JSON.parse(fs.readFileSync('./public/characters.json'))
   );
 
   socket.on('characterUpdate', (data) => {
